@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Usuario">
+
+        <TextView
+            android:id="@+id/Crear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Crear una nueva cuenta" />
+
+        <TextView
+            android:id="@+id/cedula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="5dp"
+            android:text="Cèdula:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Crear" />
+
+        <EditText
+            android:id="@+id/txt_cedula"
+            android:layout_width="277dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="12dp"
+            android:inputType="text|number"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toEndOf="@+id/cedula"
+            app:layout_constraintTop_toBottomOf="@+id/Crear"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Nombres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="5dp"
+            android:text="Nombres:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.028"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cedula" />
+
+        <EditText
+            android:id="@+id/txt_nombres"
+            android:layout_width="275dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="12dp"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.235"
+            app:layout_constraintStart_toEndOf="@+id/Nombres"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cedula"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="5dp"
+            android:text="Usuario:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.033"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Nombres" />
+
+        <EditText
+            android:id="@+id/txt_usuario"
+            android:layout_width="273dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="12dp"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.365"
+            app:layout_constraintStart_toEndOf="@+id/Usuario"
+            app:layout_constraintTop_toBottomOf="@+id/txt_nombres"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Celular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="5dp"
+            android:text="Celular:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.039"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Usuario" />
+
+        <EditText
+            android:id="@+id/txt_celular"
+            android:layout_width="272dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="12dp"
+            android:inputType="text|number"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.377"
+            app:layout_constraintStart_toEndOf="@+id/Celular"
+            app:layout_constraintTop_toBottomOf="@+id/txt_usuario"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="5dp"
+            android:text="Correo:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.039"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Celular" />
+
+        <EditText
+            android:id="@+id/txt_correo"
+            android:layout_width="273dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="12dp"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.377"
+            app:layout_constraintStart_toEndOf="@+id/Correo"
+            app:layout_constraintTop_toBottomOf="@+id/txt_celular"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Clave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="5dp"
+            android:text="Clave:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.039"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Correo" />
+
+        <EditText
+            android:id="@+id/txt_clave"
+            android:layout_width="268dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="12dp"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.453"
+            app:layout_constraintStart_toEndOf="@+id/Clave"
+            app:layout_constraintTop_toBottomOf="@+id/txt_correo"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_registrar"
+            android:layout_width="147dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="48dp"
+            android:text="Registrarse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_clave" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
