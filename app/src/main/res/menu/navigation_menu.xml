@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/nav_account"
+        android:title="INICIO" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="AGREGAR BIBLIOTECARIO" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="AGREGAR LIBRO" />
+    <item
+        android:id="@+id/devolver_libro"
+        android:title="DEVOLVER LIBRO" />
+    <item
+        android:id="@+id/listados"
+        android:title="LISTADOS" />
+
+</menu>
